@@ -1,15 +1,38 @@
-#button:hover{
-    color: rgb(0, 178, 51);
-    background-color: rgb(0, 42, 0);
-    cursor: pointer;
-    
+body{
+    background-color: #eee;
 }
 
-#box{
-    border: 1px solid grey;
+.btn:hover{
+    color: grey;
+    background-color:white;
+    cursor: pointer;
+    box-shadow: -5px 7px 30px 0px rgb(161, 158, 158);
+}
+
+.btn{
+    border: none;
+    outline: none;
+    background-color: white;
+    color: grey;
+    height: 50px;
+    width: 140px;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-shadow: -5px 7px 21px 0px rgb(198, 196, 196);
+    font-family: sans-serif;
+}
+
+#text-box{
+    border:none;
+    box-shadow: -5px 7px 21px 0px rgb(198, 196, 196);
     border-radius: 10px;
     color: rgb(72, 72, 72);
     font-family: monospace;
+}
+
+#text-box:focus{
+    outline: none;
+    border: none;
 }
 
 #loader{
@@ -19,6 +42,10 @@
 
 
 #resultElement{
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     color: rgb(60, 60, 60);
     background-color: rgb(139, 253, 139);
     position: relative;
@@ -31,4 +58,40 @@
     0% { bottom: -0.2em; opacity: 1; }
     50% { bottom: 0.2em; }
     100% { bottom: 0; opacity: 1; }
+}
+
+footer{
+    color: grey;
+    font-size: 15px;
+    padding-top: 30px;
+    text-align: center;
+    font-family: monospace;
+    position: absolute;
+    bottom: 20px;
+    margin-left: 37%;
+}
+
+h1{
+    font-size: 40px;
+    margin-top: 30px;
+    color: grey;
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+
+h3{
+    font-size: 20px;
+    margin-top: -20px;
+    color:rgb(66, 65, 65);
+    font-family: sans-serif;
+    margin-left: 20px;
+}
+
+h4{
+    padding-top:10px;
+    font-size: 15px;
+    margin-top: -20px;
+    color:rgb(254, 80, 80);
+    font-family: sans-serif;
+    margin-left: 20px;
 }
