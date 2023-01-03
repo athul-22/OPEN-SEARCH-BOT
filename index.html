@@ -7,15 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OPEN SEARCH</title>
     <script src="script.js"></script>
+    <link type="icon" href="sapiens.png">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
 </head>
 <body onload="loadFun()">
     <h1>Welcome to OpenSearch BOT</h1>
     <h3>Get most precise Answers</h3>
     <h4 id="h4">* USE MORE WORDS TO GET MORE PRECISE ANSWERS.<br>* WE DONOT USE ANY TYPE OF AI CODES OR RELATED MATERIALS SO ACCURACY IS NOT GARUNTEED</h4>
-    <textarea id="text-box" placeholder="Enter here Any Questions" type="text" style="font-size:20px;height: 40px;width:90%;margin-top:20px;margin-right:20px;margin-left:20px;text-align:start;padding-top: 20px;padding-left: 20px;"></textarea><br><br>
-    <img style="display: none;" src="loading_icon.gif" height="40px" width="40px" alt="loading" id="loader">
+    
+    <textarea onfocus="textArea()" id="text-box" placeholder="Enter here Any Questions" type="text" style="font-size:20px;height: 40px;width:90%;margin-top:20px;margin-right:20px;margin-left:20px;text-align:start;padding-top: 20px;padding-left: 20px;"></textarea><br><br>
+    
+    <img style="display: none;" src="Fidget-spinner.gif" height="40px" width="40px" alt="loading" id="loader">
+    
     <button onclick="fun()" class="btn" style="border-radius: 10px;">FIND ANSWER</button>
+    
+    <div id="resultElement"></div>
+    
     <div id="getw"></div>
 
 <script src="script.js"></script>

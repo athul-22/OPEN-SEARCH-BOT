@@ -50,6 +50,7 @@ body{
     background-color: rgb(139, 253, 139);
     position: relative;
     opacity: 0;
+    display: none;
     animation: move-text 0.75s forwards;
 }
 
@@ -64,11 +65,12 @@ footer{
     color: grey;
     font-size: 15px;
     padding-top: 30px;
+   width: 100%;
+    position: absolute;
     text-align: center;
     font-family: monospace;
-    position: absolute;
     bottom: 20px;
-    margin-left: 37%;
+    
 }
 
 h1{

@@ -1,8 +1,9 @@
 function fun(){
+
     // CALLING ELEMENTS
     var loader = document.getElementById("loader");
     var textValue = document.querySelector("#text-box").value;
-
+    
     // TEXT + REPLACING FUNCTION
     var NewSTR = textValue.replaceAll(" ","+");
     var googleText = "https://www.google.com/search?q=";
@@ -19,7 +20,6 @@ function fun(){
         loader.style.display = "none";
         loader.style.alignContent = "center";
     }, 3000);
-
     
     // WIKIPEDIA SEARCH 
     // FETCHING FROM WIKIPEDIA API
@@ -41,18 +41,19 @@ function fun(){
     .catch(function(){
         console.log("ERROR OCCURED . PLS CHECK THE CODE");
     });
+
 }
 
-
 function finalresult(myArray){
-        console.log(myArray);
+        
+    console.log(myArray);
 
-          // CREATING RESULT ELEMENT
-     let resultElement = document.createElement("div");
-     document.body.appendChild(resultElement);
-     resultElement.id = resultElement;
+    // CREATING RESULT ELEMENT
+    let resultElement = document.createElement("div");
+    document.body.appendChild(resultElement);
+    resultElement.id = resultElement;
      
-        myArray.forEach(function(item){
+    myArray.forEach(function(item){
 
             let itemTitle = item.title;
             let itemSnippet = item.snippet;
@@ -83,21 +84,19 @@ function finalresult(myArray){
             var newSnippet = itemSnippet.replace( /(<([^>]+)>)/ig, '');
             resultElement.innerHTML = itemSnippet;
             // FINAL RESULT PRINTNG
-            if(document.getElementById("resultDes").innerHTML != " "){
-                document.getElementById("resultDes").innerHTML = " ";
-            }else{
-                document.getElementById("resultDes").style.visibility = "visible";
-                document.getElementById("resultDes").innerHTML = newSnippet;
-                console.log(newSnippet);
-            }
-            
             //   resultElement.innerText = newSnippet;  
         })
 }
 
+//LOAD FUNCTION
 
 function loadFun(){
     setTimeout(() => {
         document.getElementById("h4").style.display = "none";
     }, 5000);
+}
+
+
+function textArea(){
+    var textValue = document.querySelector("#text-box").value = NULL;
 }
